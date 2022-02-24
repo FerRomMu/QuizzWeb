@@ -51,6 +51,17 @@
     font-weight: 600;
 }
 
+.quizz__btn-start {
+    font-size: 2em;
+    border: 4px solid #000;
+    border-radius: 5px;
+}
+
+.quizz__btn-start:hover {
+    background: #f00;
+    color: #fbff24;
+}
+
 .quizz__option {
 }
 
