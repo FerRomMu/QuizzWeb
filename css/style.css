@@ -6,15 +6,17 @@
 .body {
     background: linear-gradient(to right, rgba(217,100,100,1) 20%, rgba(155,103,205,1) 100%);
     background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    min-width: 500px;
+    min-height: 250px; 
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vh;
-    height: 100vh;
 }
 
 .quizz {
-    background: #e7d0d0;
+    background: #cce;
     padding: 30px;
     border: 3px solid #000;
     border-radius: 5px;
@@ -31,12 +33,13 @@
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: 200px 200px;
-    grid-template-rows: 50px 50px;
+    gap: 5px;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(2, 50px);
 }
 
 .quizz__controls {
-    margin: 5px;
+    margin: 5px 0px;
 }
 
 .quizz__btn {
@@ -49,6 +52,16 @@
 }
 
 .quizz__option {
-    margin: 0 5px;
 }
 
+.quizz__option--correct {
+    background: #4f8737;
+}
+
+.quizz__option--fail {
+    background: #f00;
+}
+
+.hide {
+    display: none;
+}
