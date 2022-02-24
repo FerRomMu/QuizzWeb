@@ -10,9 +10,23 @@
     <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
-<body>
-
+<body class="body">
+    <main class="quizz">
+        <div class="quizz__container hide"></div>
+            <div class="quizz__question">Question</div>
+            <div class="quizz__options">
+                <button class="quizz__option quizz__btn">Answer 1</button>
+                <button class="quizz__option quizz__btn">Answer 2</button>
+                <button class="quizz__option quizz__btn">Answer 3</button>
+                <button class="quizz__option quizz__btn">Answer 4</button>
+            </div>
+        </div>
+        <div class="quizz__controls">
+            <button class="quizz__start-btn quizz__btn">Start</button>
+            <button class="quizz__next-btn quizz__btn hide">Next</button>
+        </div>
+    </main>
 </body>
 </html>

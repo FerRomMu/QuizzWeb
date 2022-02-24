@@ -3,8 +3,52 @@
     font-weight: normal;
 }
 
-body {
+.body {
     background: linear-gradient(to right, rgba(217,100,100,1) 20%, rgba(155,103,205,1) 100%);
     background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vh;
+    height: 100vh;
+}
+
+.quizz {
+    background: #e7d0d0;
+    padding: 30px;
+    border: 3px solid #000;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px;
+}
+
+.quizz__question {
+    margin: 0 0 20px 0;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.quizz__options {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 50px 50px;
+}
+
+.quizz__controls {
+    margin: 5px;
+}
+
+.quizz__btn {
+    background: #702f81;
+    padding: 5px;
+    border: 2px solid #000;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.quizz__option {
+    margin: 0 5px;
 }
 
